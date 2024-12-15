@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page1.css">
+ 
+    <title>Chiffrement Symétrique (AES)</title>
+</head>
+<body>
+   <div class="section">
+    <h2>Chiffrement Symétrique (AES)</h2>
+ 
+ <textarea id="plaintext" placeholder="Texte clair"></textarea>
+   
+
+    <input id="key" type="text" placeholder="Clé (4 caractères)">
+
+    <button onclick="encryptAES()">Chiffrer</button>
+    <button onclick="decryptAES()">Déchiffrer</button>
+    <p><strong>Résultat :</strong></p>
+    <textarea id="resultAES" readonly></textarea>
+
+
+   </div>
+
+</body>
+<script src="app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</html>

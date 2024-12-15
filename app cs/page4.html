@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page1.css">
+    <link rel="stylesheet" href="app.js">
+    <title>Signatures Numériques</title>
+</head>
+<body>
+    <h1>Test de Signatures Numériques</h1>
+        
+    <button id="generate-keys-btn">Générer des Clés RSA</button>
+    <div id="keys-container">
+        <p id="public-key"></p>
+        <p id="private-key"></p>
+    </div>
+    
+
+    <textarea id="message" placeholder="Entrez un message à signer..."></textarea>
+    <button id="sign-btn">Signer le Message</button>
+    <p id="signature"></p>
+    
+ 
+    <button id="verify-btn">Vérifier la Signature</button>
+    <p id="verification-result"></p>
+</div>
+</div>
+
+</body>
+<script src="app.js"></script>
+</html>
